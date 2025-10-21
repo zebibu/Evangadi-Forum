@@ -1,0 +1,36 @@
+/* Pages/NotFound/NotFound.module.css */
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+.container h1 {
+  font-size: 8rem;
+  color: #007bff;
+  margin: 0;
+}
+
+.container p {
+  font-size: 1.5rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.homeBtn {
+  padding: 0.75rem 1.5rem;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.homeBtn:hover {
+  background: #0056b3;
+}

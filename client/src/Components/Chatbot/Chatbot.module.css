@@ -1,0 +1,207 @@
+/* Floating button */
+.ai_circle_btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  background: linear-gradient(135deg, #0077ff, #005bcc);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+.ai_circle_btn:hover {
+  transform: scale(1.1);
+}
+
+/* Sidebar */
+.chat_sidebar {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  top: 20px;
+  width: 500px; /* wider */
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.chat_header {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative; 
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #0077ff, #005bcc);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.chat_header button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.chat_header button:hover {
+  background: #ffffff66;
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+/* Chat body */
+.chat_body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.chat_greeting_container {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; 
+  width: 80%;
+  text-align: center;
+}
+
+.chat_greeting {
+  color: #4472f3ea; 
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.5;
+  user-select: none; 
+}
+
+/* Message container */
+.user_container,
+.ai_container {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.user_container {
+  justify-content: flex-end;
+}
+
+.ai_container {
+  justify-content: flex-start;
+}
+
+/* Avatar */
+.avatar {
+  margin: 0 8px;
+  color: #096beb;
+}
+
+/* Bubbles */
+.user_bubble {
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 5px;
+  max-width: 75%;
+  word-break: break-word;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ai_bubble {
+  background: #e5e7eb;
+  color: #111827;
+  padding: 12px 18px;
+  border-radius: 5px;
+  max-width: 75%;
+  word-break: break-word;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Copy button */
+.copy_btn {
+  margin-top: 6px;
+  font-size: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  transition: background 0.2s;
+}
+.copy_btn:hover {
+  background: #2563eb;
+}
+
+/* Input */
+.chat_input {
+  display: flex;
+  padding: 14px;
+  border-top: 1px solid #ddd;
+  background: #f9fafb;
+}
+.chat_input input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 14px;
+}
+.chat_input input:focus {
+  border-color: #0077ff;
+
+  outline: none;
+}
+.chat_input button {
+  margin-left: 8px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #0077ff, #005bcc);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.chat_input button:hover {
+  background: #2563eb;
+}
+
+/* Typing & copy feedback */
+.typing_indicator {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+.copy_feedback {
+  text-align: center;
+  font-size: 12px;
+  color: #10b981;
+  margin: 4px 0;
+}

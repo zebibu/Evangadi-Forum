@@ -1,0 +1,252 @@
+/* ---------------- MAIN CONTAINER ---------------- */
+main {
+  width: 85%;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ---------------- QUESTION SECTION ---------------- */
+.question_section {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question_section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,119,255,0.1);
+}
+
+.question_section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0077ff;
+}
+
+.question_section h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.question_section p {
+  font-size: 16px;
+  /* color: #555; */
+  line-height: 1.7;
+}
+
+/* Username below question */
+.question_section .username {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.question_section .username svg,
+.question_section .username img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+  background: #eef3fb;
+  border: 2px solid #0077ff;
+}
+
+.question_section .username span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0077ff;
+}
+.answersCount{
+  color: #0077ff;
+  font-weight: bold;
+}
+/* ---------------- ANSWER SECTION ---------------- */
+.answer_section h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #222;
+  text-align: center;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px 25px;
+  margin: 18px 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.answer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,119,255,0.1);
+}
+
+.answer svg,
+.answer img.avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #eaf3ff;
+  color: #0077ff;
+}
+
+.answer .username {
+   text-align: center;
+  font-weight: 500;
+  color: #555;
+}
+
+.answer p {
+   margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+.para {
+  text-align: center; 
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.pagination button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #0077ff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 119, 255, 0.3);
+}
+
+.pagination button:disabled {
+  background-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.activePage {
+  background-color: #0077ff !important;
+  color: white !important;
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(0, 119, 255, 0.3);
+  transform: scale(1.1);
+}
+
+/* ---------------- POST ANSWER FORM ---------------- */
+.answer_form {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.answer_form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 600;
+  text-align: center;
+}
+
+.answer_form textarea {
+  width: 100%;
+  min-height: 160px;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #d0d7de;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  resize: vertical;
+  background: #fdfdfd;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.answer_form textarea:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 6px rgba(0, 119, 255, 0.2);
+  outline: none;
+}
+
+.submit_btn {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #0077ff, #005bcc);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit_btn:hover {
+  background: linear-gradient(135deg, #005bcc, #003f8c);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* ---------------- STATES ---------------- */
+.success {
+  color: #16a34a;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .answer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .question_section {
+    width: 100%;
+  }
+}

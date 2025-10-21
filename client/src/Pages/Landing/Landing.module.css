@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/bg.svg");
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner__container {
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .inner__container {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+  }
+}

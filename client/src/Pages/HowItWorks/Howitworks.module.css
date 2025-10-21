@@ -1,0 +1,59 @@
+.HowItWorks__container {
+  width: 80%;
+  max-width: 900px;
+  margin: 100px auto 50px;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.HowItWorks__container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ec9b03, rgb(2, 14, 29));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+.HowItWorks__container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 10px 15px;
+  border-left: 4px solid #ffc507;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.HowItWorks__container p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.HowItWorks__container p::before {
+  content: "💡 ";
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .HowItWorks__container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .HowItWorks__container h1 {
+    font-size: 1.8rem;
+  }
+
+  .HowItWorks__container p {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}

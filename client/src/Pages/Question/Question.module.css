@@ -1,0 +1,133 @@
+.post_question_container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.inner_post_question_wrapper {
+  width: 60%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inner_post_question_wrapper p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-left: 20px;
+  color: #555;
+}
+
+.post_title {
+  font-size: 28px;
+  text-align: center;
+  color: #055bbd;
+  margin-bottom: 10px;
+}
+
+.border_bottom {
+  border-bottom: 3px solid #055bbd;
+  width: 220px;
+  margin: 0 auto 20px auto;
+}
+
+.post_title_2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 26px;
+  color: #055bbd;
+  font-weight: 600;
+}
+.go_to {
+  display: block; 
+  text-align: center;
+  color: #055bbd;
+  font-weight: 600;
+  text-decoration: none;
+}
+.post_input_title,
+.post_textarea {
+  margin: 10px auto;
+  padding: 12px 15px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post_input_title:focus,
+.post_textarea:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 4px #005bcc;
+}
+
+.post_button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #0077ff, #005bcc);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.post_button:hover {
+  background: linear-gradient(135deg, #005bcc, #003f8c);
+  transform: translateY(-2px);
+}
+
+.question_alert_message {
+  padding: 10px 15px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #374373;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Success & Error variants */
+.success {
+  background-color: #e0f9e0;
+  color: #2b7a2b;
+}
+
+.error {
+  background-color: #ffe0e0;
+  color: #b02b2b;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .inner_post_question_wrapper {
+    width: 90%;
+  }
+
+  .post_title {
+    font-size: 24px;
+  }
+
+  .post_title_2 {
+    font-size: 22px;
+  }
+
+  .inner_post_question_wrapper p {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
